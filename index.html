@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malen Luna | Portfolio Creativo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="nav-glass">
+        <div class="logo">M<span>L</span></div>
+        <div class="nav-links">
+            <a href="#inicio" class="nav-item" data-key="inicio">Inicio</a>
+            <a href="#habilidades" class="nav-item" data-key="skills">Skills</a>
+            <a href="#proyectos" class="nav-item" data-key="proyectos">Proyectos</a>
+            
+            <div class="theme-controls">
+                <button id="lang-btn" class="icon-btn">EN</button>
+                <button id="theme-btn" class="icon-btn">
+                    <i data-lucide="moon" id="theme-icon"></i>
+                </button>
+            </div>
+            
+            <a href="#contacto" class="nav-btn" data-key="contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="bg-text-top">DISEÑO</div>
+        <div class="bg-text-bottom">INOVADOR</div>
+
+        <div class="hero-container">
+            <div class="hero-content reveal">
+                <h1 class="title-main">Malen <span>Luna.</span></h1>
+                <p class="subtitle" data-key="subtitle">Diseño que inspira. Código que funciona.</p>
+                <p class="hero-sub" data-key="heroSub">
+                    Técnica en informática apasionada por el Frontend y el Diseño UI/UX. Transformo ideas en experiencias visualmente impactantes.
+                </p>
+                <div class="hero-actions">
+                    <a href="img/curriculum.jpg" download class="btn-main" data-key="btnMain">Descargar CV</a>
+                    <a href="https://www.instagram.com/malenn._21" target="_blank" class="social-icon">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flower-visual-container reveal">
+                <img src="img/flor-completa.png" alt="Diseño de Cristal Malen Luna" class="full-flower-image">
+            </div>
+        </div>
+    </header>
+
+    <section id="habilidades" class="section bg-soft">
+        <div class="container">
+            <h2 class="label reveal" data-key="labelSkills">Mi Enfoque Técnico</h2>
+            <div class="skills-flex">
+                <div class="skill-item reveal">
+                    <div class="icon-box"><i data-lucide="layout"></i></div>
+                    <h4>UI/UX Design</h4>
+                    <p data-key="skill1">Interfaces pensadas para el usuario final, con balance entre estética y usabilidad.</p>
+                </div>
+                <div class="skill-item reveal">
+                    <div class="icon-box"><i data-lucide="code-2"></i></div>
+                    <h4>Frontend</h4>
+                    <p data-key="skill2">Desarrollo responsivo utilizando tecnologías modernas para webs rápidas.</p>
+                </div>
+                <div class="skill-item reveal">
+                    <div class="icon-box"><i data-lucide="layers"></i></div>
+                    <h4>Tecnología IT</h4>
+                    <p data-key="skill3">Capacidad analítica para resolver problemas complejos de lógica y programación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="section">
+        <div class="container">
+            <h2 class="label reveal" data-key="labelProjects">Proyectos Seleccionados</h2>
+            <div class="carousel-wrapper reveal">
+                <div class="carousel-track">
+                    <div class="project-slide">
+                        <img src="img/auto.jpg" alt="Pistón de Oro">
+                        <div class="project-info-overlay">
+                            <h3>Pistón de Oro</h3>
+                            <p data-key="project1Desc">Web interactiva para consultoría mecánica.</p>
+                            <a href="https://taller-mecanico-piston-de-oro.lovable.app/" target="_blank" class="view-link" data-key="viewSite">Visitar Sitio <i data-lucide="external-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-slide">
+                        <img src="img/image.png" alt="Burger & Co.">
+                        <div class="project-info-overlay">
+                            <h3>Burger & Co.</h3>
+                            <p data-key="project2Desc">Interfaz dinámica para pedidos online.</p>
+                            <span class="status-tag" data-key="comingSoon">Próximamente</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control prev"><i data-lucide="chevron-left"></i></button>
+                <button class="carousel-control next"><i data-lucide="chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section-cta">
+    <div class="cta-card reveal">
+        <h2 data-key="ctaTitle">¿Trabajamos juntos?</h2>
+        <div class="cta-links">
+            <div class="contact-item">
+                <i data-lucide="mail"></i>
+                <span>malenluna.21@gmail.com</span>
+            </div>
+
+            <a href="https://github.com/malenluna" target="_blank" class="contact-link">
+                <span>GitHub</span>
+                <i data-lucide="github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/malen-luna-70b5a7406/" target="_blank" class="contact-link">
+                <span>LinkedIn</span>
+                <i data-lucide="linkedin"></i>
+            </a>
+
+            <a href="https://www.instagram.com/malenn._21" target="_blank" class="contact-link">
+                <i data-lucide="instagram"></i>
+                <span>Instagram</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <p>© 2026 Malen Luna — Pilar, Buenos Aires</p>
+    </footer>
+
+    <script src="JS/index.js"></script>
+</body>
+</html>
